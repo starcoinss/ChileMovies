@@ -1,0 +1,52 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Inicio
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Tab 1</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div class="carousel">
+    <div class="carousel-slide">
+      <img src="https://preview.redd.it/official-poster-for-captain-america-brave-new-world-v0-jkgmtnwszxzd1.jpeg?auto=webp&s=90b1ec0b517d9fcc07bfd5b06c8da5218d574c35" alt="Imagen 1">
+        <img src="https://preview.redd.it/superman-movie-2025-poster-v0-d3ix39go81vd1.jpeg?auto=webp&s=9b5e9f1add35a22b6360624aba2a49020855d3c7 "alt="Imagen 2">
+    </div>
+    <button class="prev" onclick="moveSlide(-1)">❮</button>
+    <button class="next" onclick="moveSlide(1)">❯</button>
+</div>
+
+<script src="script.js">
+
+let currentIndex = 0;
+const slides = document.querySelectorAll('.carousel-slide img');
+const totalSlides = slides.length;
+
+function showSlide(index) {
+    const slideWidth = slides[0].clientWidth;
+    document.querySelector('.carousel-slide').style.transform = `translateX(${-index * slideWidth}px)`;
+}
+
+function moveSlide(step) {
+    currentIndex = (currentIndex + step + totalSlides) % totalSlides;
+    showSlide(currentIndex);
+}
+
+// Cambio automático de diapositiva cada 3 segundos
+setInterval(() => {
+    moveSlide(1);
+}, 3000);
+
+// Mostrar la primera diapositiva
+showSlide(currentIndex);
+
+</script>
+
+
+</ion-content>

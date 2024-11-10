@@ -1,0 +1,24 @@
+/* Contenedor */
+.container {
+    display: flex;
+    align-items: flex-end; /* Coloca los elementos en la parte inferior del contenedor */
+}
+
+/* Imagen */
+img {
+    width: 100px; /* Tamaño de la imagen */
+    margin-left: 5px; /* Espacio respecto al borde izquierdo */
+    margin-right: 10px; /* Espacio entre la imagen y el contenido a la derecha */
+}
+
+ion-content {
+    --background: #079196; /* Cambia este color por el que desees */
+}
+ion-toolbar {
+    --background: #079196; /* Cambia el color de fondo del toolbar */
+}
+
+ion-title {
+    color: #000000; /* Cambia el color del texto del título */
+    font-weight: bold; /* Opcional: agrega un peso de fuente para hacer el texto más grueso */
+}
