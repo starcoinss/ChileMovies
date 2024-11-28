@@ -22,7 +22,39 @@ ion-title {
     color: #ffffff; /* Cambia el color del texto del título */
     font-weight: bold; /* peso de fuente para hacer el texto más grueso */
 }
-
 p {
+    text-align-last:left;
     color: #000000;
+    font-size: 17px;
 }
+
+h1,h2,h3{
+    text-align-last:left;
+    color: #000000;
+    font-size: 28px;
+}
+ol li{
+    color: #000000;
+    margin-bottom: 15px;
+    font-size: 17px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px; /* Espacio desde el borde inferior */
+}
+  
+.icon img {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.icon:hover img {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+}
+

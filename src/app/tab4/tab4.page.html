@@ -1,0 +1,149 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Sobre Nosotros
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Sobre ChileMovies</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <!-- Introducción -->
+  <section class="intro">
+    <h1>Bienvenido a ChileMovies</h1>
+    <p>
+      Somos ChileMovies, un puente entre el cine y tu pantalla. Nuestra aplicación está pensada para ofrecer una experiencia
+      cinematográfica única, con acceso a la última cartelera, horarios y contenido exclusivo sobre el séptimo arte.
+    </p>
+    <p>
+      Desde las grandes producciones hasta las joyas del cine nacional, nuestro objetivo es conectar a los usuarios con
+      películas que les apasionen, brindando opciones variadas y actualizadas para todos los gustos.
+    </p>
+  </section>
+
+  <!-- Servicio al Cliente -->
+  <section class="service">
+    <h2>Servicio al Cliente</h2>
+    <p>
+      Si tienes alguna duda o necesitas asistencia, nuestro equipo de soporte está disponible para ayudarte. Puedes
+      contactarnos por las siguientes vías:
+    </p>
+    <ul>
+      <li><strong>Correo electrónico:</strong> ChileMoviesgmail.com</li>
+      <li><strong>Formulario de contacto:</strong> Disponible en la sección "Soporte" de la app.</li>
+      <li><strong>Tiempo de respuesta:</strong> Nos comprometemos a responder en 24 horas hábiles.</li>
+    </ul>
+  </section>
+
+  <!-- Política de Reembolso -->
+  <section class="refund-policy">
+    <h3>Política de Reembolso</h3>
+    <p>
+      En ChileMovies, buscamos siempre la satisfacción de nuestros usuarios. Si no estás conforme con la aplicación, puedes
+      solicitar un reembolso bajo las siguientes condiciones:
+    </p>
+    <ul>
+      <li><strong>Plazo para Solicitar Reembolso:</strong> 7 días desde la compra si no cumple con tus expectativas o si presenta fallos
+        técnicos no resueltos.</li>
+      <li><strong>Excepciones:</strong> No habrá reembolso si la app no presenta fallos técnicos o si se han realizado compras dentro de ella.</li>
+      <li><strong>Proceso de Reembolso:</strong> Contáctanos por correo electrónico o el formulario de contacto en la app para iniciar el proceso.</li>
+      <li><strong>Método de Reembolso:</strong> El reembolso se procesará a través del método de pago original.</li>
+      <li><strong>Exclusiones:</strong> No se reembolsará si el contenido comprado ha sido utilizado o si el reembolso se solicita fuera del plazo.</li>
+    </ul>
+  </section>
+
+  <!-- Redes Sociales -->
+  <section class="social">
+    <h3>Síguenos en Redes Sociales</h3>
+    <div class="social-icons">
+      <a href="https://www.instagram.com" target="_blank" class="icon instagram" aria-label="Instagram">
+        <img src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png" alt="Instagram">
+      </a>
+      <a href="https://www.facebook.com" target="_blank" class="icon facebook" aria-label="Facebook">
+        <img src="https://www.edigitalagency.com.au/wp-content/uploads/Facebook-logo-blue-large-size-PNG.png" alt="Facebook">
+      </a>
+    </div>
+  </section>
+</ion-content>
+
+<style>
+  /* Estilo general */
+  ion-content {
+    --background: #f9f9f9;
+    font-family: 'Arial', sans-serif;
+  }
+
+  section {
+    padding: 20px;
+    margin-bottom: 40px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Estilo para el encabezado */
+  .intro h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #2c3e50;
+    text-align: center;
+  }
+
+  .intro p {
+    font-size: 1.1em;
+    color: #34495e;
+    line-height: 1.6;
+  }
+
+  /* Estilo para los apartados */
+  h2, h3 {
+    font-size: 1.8em;
+    color: #2c3e50;
+    margin-bottom: 15px;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  li {
+    font-size: 1.1em;
+    color: #34495e;
+    margin-bottom: 10px;
+  }
+
+  /* Estilo de los iconos sociales */
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+  }
+
+  .social-icons a {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #2c3e50;
+    transition: transform 0.3s ease;
+  }
+
+  .social-icons a:hover {
+    transform: scale(1.1);
+  }
+
+  .social-icons img {
+    width: 25px;
+    height: 25px;
+    filter: invert(100%);
+  }
+</style>

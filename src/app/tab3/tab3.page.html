@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Comida
+      Menú
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -9,11 +9,136 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
+      <ion-title size="large">Menú de Comidas</ion-title>
     </ion-toolbar>
   </ion-header>
-  <div class="container">
-    <img src="https://w7.pngwing.com/pngs/958/942/png-transparent-television-film-cinema-popcorn-popcorn-television-food-film.png" alt="imagen comida">
-    <p>Palomitas grandes: $3.500</p>
-  </div>
+
+  <section class="menu">
+    <h1>Explora Nuestro Menú</h1>
+    <p>En ChileMovies, nos encanta ofrecerte una variedad deliciosa para disfrutar mientras ves tus películas favoritas. ¡Descubre nuestras opciones!</p>
+
+    <div class="dish-category">
+      <h2>Pizzas</h2>
+      <div class="dish-item">
+        <img src="https://cloudfront-us-east-1.images.arcpublishing.com/elespectador/D4PC26EIT5BW7JAMNQRUAXGMGQ.jpg" alt="Pizza Queso" />
+        <p><strong>Pizza Queso</strong> - $6,000 CLP</p>
+        <p>Una pizza clásica con tomate y queso mozzarela.</p>
+      </div>
+      <div class="dish-item">
+        <img src="https://www.sortirambnens.com/wp-content/uploads/2019/02/pizza-de-peperoni.jpg" alt="Pizza Pepperoni" />
+        <p><strong>Pizza Pepperoni</strong> - $6,500 CLP</p>
+        <p>Deliciosa pizza con abundante pepperoni y queso fundido.</p>
+      </div>
+    </div>
+
+    <div class="dish-category">
+      <h2>Burgers</h2>
+      <div class="dish-item">
+        <img src="https://www.cnature.es/wp-content/uploads/2021/12/hamburguesa-con-guacamole.jpg" alt="Hamburguesa Clásica" />
+        <p><strong>Hamburguesa Clásica</strong> - $3,500 CLP</p>
+        <p>Hamburguesa jugosa con lechuga, tomate, cebolla y queso cheddar.</p>
+      </div>
+      <div class="dish-item">
+        <img src="https://tofuu.getjusto.com/orioneat-local/resized2/QKtA4HaE4BCugCys7-800-x.webp" alt="Burger BBQ" />
+        <p><strong>Burger BBQ</strong> - $4,500 CLP</p>
+        <p>Hamburguesa con cebolla caramelizada, bacon y salsa barbacoa.</p>
+      </div>
+    </div>
+
+    <div class="dish-category">
+      <h2>Papas Fritas</h2>
+      <div class="dish-item">
+        <img src="https://images-gmi-pmc.edge-generalmills.com/476c10e1-c851-4539-8e3b-4b49323927c5.jpg" alt="Tiramisú" />
+        <p><strong>Papas Fritas</strong> - $3,200 CLP</p>
+        <p>Ricas Papas Fritas crocantes con sal.</p>
+      </div>
+      <div class="dish-item">
+        <img src="https://santaisabel.vtexassets.com/arquivos/ids/292151/Papas-Fritas-Kryzpo-Original-130-g.jpg?v=638227939155770000" alt="Brownie de Chocolate" />
+        <p><strong>Papas Kryzpo</strong> - $2,500 CLP</p>
+        <p>Papa en láminas fritas saladas, sabor original.</p>
+      </div>
+    </div>
+
+    <div class="dish-category">
+      <h2>Bebestibles</h2>
+      <div class="dish-item">
+        <img src="https://tofuu.getjusto.com/orioneat-prod/gQmcLdRaM4gWZpqGa-Bebidas%20lata.jpg" alt="Refresco Cola" />
+        <p><strong>Bebidas</strong> - $1,500 CLP</p>
+        <p>Refresco clásico y refrescante, perfecto para acompañar tu comida.</p>
+      </div>
+      <div class="dish-item">
+        <img src="https://lirp.cdn-website.com/b4fb73a9/dms3rep/multi/opt/29256887321_51b21baab4_z-640x464-640w.jpg" alt="Jugo Natural" />
+        <p><strong>Jugo Natural</strong> - $2,000 CLP</p>
+        <p>Jugo fresco de frutas naturales, opción saludable.</p>
+      </div>
+    </div>
+  </section>
+
 </ion-content>
+
+<style>
+  /* Estilo general */
+  ion-content {
+    --background: #f9f9f9;
+    font-family: 'Arial', sans-serif;
+  }
+
+  .menu {
+    padding: 20px;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #2c3e50;
+    margin-bottom: 20px;
+  }
+
+  p {
+    text-align: center;
+    font-size: 1.1em;
+    color: #34495e;
+    line-height: 1.6;
+  }
+
+  .dish-category {
+    margin-top: 30px;
+  }
+
+  .dish-category h2 {
+    font-size: 1.8em;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+
+  .dish-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+  .dish-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+
+  .dish-item p {
+    font-size: 1.1em;
+    color: #34495e;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .dish-item strong {
+    font-size: 1.3em;
+    color: #2c3e50;
+  }
+</style>

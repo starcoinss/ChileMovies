@@ -9,9 +9,275 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
+      <ion-title size="large">Cartelera</ion-title>
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+  <!-- Sección 1: Películas de Superhéroes -->
+  <div class="section">
+    <div class="section-header superhero-bg">
+      <h2 class="section-title"><ion-icon name="flash-outline"></ion-icon> Superhéroes</h2>
+    </div>
+    <div class="movie-container">
+      <!-- Película -->
+      <div class="movie-card">
+        <img src="https://m.media-amazon.com/images/S/pv-target-images/97ec724900fd9c3d7006614ac9702f35e21386eacc63981bbad6b14baeed2197.jpg" 
+          alt="Avengers Endgame" 
+          class="movie-img">
+        <h2 class="movie-title">Avengers: Endgame</h2>
+        <p class="movie-details">Duración: 3h | Horarios: 12:00, 15:30, 19:00</p>
+        <ion-button expand="full" class="buy-button">Comprar</ion-button>
+      </div>
+      <div class="movie-card">
+        <img src="https://decine21.com/img/upload/obras/the-batman-42376/the-batman-42376-c.jpg" 
+          alt="The Batman" 
+          class="movie-img">
+        <h2 class="movie-title">The Batman</h2>
+        <p class="movie-details">Duración: 2h 56m | Horarios: 13:00, 16:45, 20:15</p>
+        <ion-button expand="full" class="buy-button">Comprar</ion-button>
+      </div>
+      <div class="movie-card">
+        <img src="https://m.media-amazon.com/images/S/pv-target-images/869a8420fe4cdd1fc934785827a06ac63d6e1c55f650d13e0a4128e4e35bd4d9.jpg" 
+          alt="Spider-Man: No Way Home" 
+          class="movie-img">
+        <h2 class="movie-title">Spider-Man: No Way Home</h2>
+        <p class="movie-details">Duración: 2h 28m | Horarios: 10:00, 14:30, 18:45</p>
+        <ion-button expand="full" class="buy-button">Comprar</ion-button>
+      </div>
+      <div class="movie-card">
+        <img src="https://pics.filmaffinity.com/Venom_El_aultimo_baile-379990903-large.jpg" 
+          alt="Spider-Man: No Way Home" 
+          class="movie-img">
+        <h2 class="movie-title">Venom 3</h2>
+        <p class="movie-details">Duración: 1h 49m | Horarios: 15:20, 18:00</p>
+        <ion-button expand="full" class="buy-button">Comprar</ion-button>
+      </div>
+      <div class="movie-card">
+        <img src="https://www.ecartelera.com/carteles/16600/16608/005_m.jpg" 
+          alt="Deadpool 3" 
+          class="movie-img">
+        <h2 class="movie-title">Deadpool 3</h2>
+        <p class="movie-details">Duración: 2h 7m | Horarios: 10:30, 13:00, 15:30</p>
+        <ion-button expand="full" class="buy-button">Comprar</ion-button>
+      </div>
+      <div class="movie-card">
+        <img src="https://play-lh.googleusercontent.com/SnNQY10paRqnLAIqMs3kwehEIvhWurhkLoO_m0z_t58Dy1bC9ScA-gxjed_n1hjwBj0V" 
+          alt="Grandes Heroes"
+          class="movie-img">
+        <h2 class="movie-title">Grandes Heroes</h2>
+        <p class="movie-details">Duración: 1h 42m | Horarios: 11:00, 13:20, 16:10</p>
+        <ion-button expand="full" class="buy-button">Comprar</ion-button>
+      </div>
+      <div class="movie-card">
+        <img src="https://es.web.img3.acsta.net/pictures/18/04/13/11/46/5802807.jpg" 
+          alt="Los Increíbles 2"
+          class="movie-img">
+        <h2 class="movie-title">Los Increíbles 2</h2>
+        <p class="movie-details">Duración: 2h 6m | Horarios: 10:00, 12:20, 14:50</p>
+        <ion-button expand="full" class="buy-button">Comprar</ion-button>
+      </div>
+      <div class="movie-card">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi_ObHPFKcsnhRcblr5BegFKqOwbuk81elfIsH0wPsUaYGpTAcUXuLAZ8jWQI3m3-Qu0F35MriysZZ0qiMlrmRuG24B_O7wpxCD9SDduBXkOefU5ccSOXvKYJNkMma-519lLvMmvASMApnS6VBCiXnpZstX2zHsQlO0zby9PvtGeqrnQ0XJDpj7JnMpT6I/s1008/Flash2023.jpg" 
+          alt="Flash"
+          class="movie-img">
+        <h2 class="movie-title">Flash</h2>
+        <p class="movie-details">Duración: 2h 24m | Horarios: 11:20, 13:50, 17:00</p>
+        <ion-button expand="full" class="buy-button">Comprar</ion-button>
+        
+    </div>
+  </div>
+</div>
+
+  <!-- Sección 2: Cine Clásico -->
+  <div class="section">
+    <div class="section-header classic-bg">
+      <h2 class="section-title"><ion-icon name="film-outline"></ion-icon> Cine Clásico</h2>
+    </div>
+    <div class="movie-container">
+      <!-- Películas -->
+      <div class="movie-card">
+        <img src="https://m.media-amazon.com/images/I/71QQ6dE72sL._AC_UF894,1000_QL80_.jpg" 
+          alt="Interstellar" 
+          class="movie-img">
+        <h2 class="movie-title">Interstellar</h2>
+        <p class="movie-details">Duración: 2h 49m | Horarios: 10:00, 14:30, 19:30</p>
+        <ion-button expand="full" class="buy-button">Comprar</ion-button>
+      </div>
+      <div class="movie-card">
+        <img src="https://m.media-amazon.com/images/M/MV5BNDYwNzVjMTItZmU5YS00YjQ5LTljYjgtMjY2NDVmYWMyNWFmXkEyXkFqcGc@._V1_.jpg" 
+          alt="Forrest Gump" 
+          class="movie-img">
+        <h2 class="movie-title">Forrest Gump</h2>
+        <p class="movie-details">Duración: 2h 22m | Horarios: 12:00, 16:00, 20:00</p>
+        <ion-button expand="full" class="buy-button">Comprar</ion-button>
+      </div>
+      <div class="movie-card">
+        <img src="https://play-lh.googleusercontent.com/rMsVcXqDC9zNT3x3b03wxjCN5xfUq2Tu_G3njfLiyAdmzEVXTHJoP2dY_GouFhZX3pcHvltaE5Mtt5ljKQ" 
+          alt="Meteoro" 
+          class="movie-img">
+        <h2 class="movie-title">Meteoro</h2>
+        <p class="movie-details">Duración: 2h 15m | Horarios: 13:00, 15:30, 18:00</p>
+        <ion-button expand="full" class="buy-button">Comprar</ion-button>
+      </div>
+      <div class="movie-card">
+        <img src="https://es.web.img3.acsta.net/pictures/18/06/12/12/12/0117051.jpg?coixp=49&coiyp=27" 
+          alt="El Padrino" 
+          class="movie-img">
+        <h2 class="movie-title">El Padrino</h2>
+        <p class="movie-details">Duración: 2h 55m | Horarios: 13:00, 16:10, 19:30</p>
+        <ion-button expand="full" class="buy-button">Comprar</ion-button>
+      </div>
+      <div class="movie-card">
+        <img src="https://pics.filmaffinity.com/Gladiator-368149580-large.jpg" 
+          alt="Gladiador" 
+          class="movie-img">
+        <h2 class="movie-title">Gladiador 1</h2>
+        <p class="movie-details">Duración: 2h 35m | Horarios: 14:00, 16:50, 19:30</p>
+        <ion-button expand="full" class="buy-button">Comprar</ion-button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sección 3: Películas de Drama -->
+  <div class="section">
+    <div class="section-header drama-bg">
+      <h2 class="section-title"><ion-icon name="sad-outline"></ion-icon> Drama</h2>
+    </div>
+    <div class="movie-container">
+      <!-- Película -->
+      <div class="movie-card">
+        <img src="https://pics.filmaffinity.com/Joker_Folie_aa_Deux-920647444-large.jpg" 
+          alt="Joker" 
+          class="movie-img">
+        <h2 class="movie-title">Joker</h2>
+        <p class="movie-details">Duración: 2h 2m | Horarios: 14:00, 17:30, 21:00</p>
+        <ion-button expand="full" class="buy-button">Comprar</ion-button>
+      </div>
+      <div class="movie-card">
+        <img src="https://pics.filmaffinity.com/Romper_el_cairculo-815379231-large.jpg" 
+          alt="Romper el círculo" 
+          class="movie-img">
+        <h2 class="movie-title">Romper el círculo</h2>
+        <p class="movie-details">Duración: 2h 11m | Horarios: 11:30, 16:00, 20:30</p>
+        <ion-button expand="full" class="buy-button">Comprar</ion-button>
+      </div>
+      <div class="movie-card">
+        <img src="https://pics.filmaffinity.com/Titanic-321994924-large.jpg" 
+          alt="Titanic" 
+          class="movie-img">
+        <h2 class="movie-title">Titanic</h2>
+        <p class="movie-details">Duración: 3h 15m | Horarios: 13:00, 17:45, 21:30</p>
+        <ion-button expand="full" class="buy-button">Comprar</ion-button>
+      </div>
+      <div class="movie-card">
+        <img src="https://pics.filmaffinity.com/El_pianista-978132965-large.jpg" 
+          alt="El pianista" 
+          class="movie-img">
+        <h2 class="movie-title">El pianista</h2>
+        <p class="movie-details">Duración: 2h 30m | Horarios: 10:00, 14:30, 19:30</p>
+        <ion-button expand="full" class="buy-button">Comprar</ion-button>
+      </div>
+      <div class="movie-card">
+        <img src="https://es.web.img2.acsta.net/pictures/17/11/15/13/00/0563207.jpg" 
+          alt="El Gran Showman" 
+          class="movie-img">
+        <h2 class="movie-title">El Gran Showman</h2>
+        <p class="movie-details">Duración: 1h 45m | Horarios: 12:00, 15:10, 19:10</p>
+        <ion-button expand="full" class="buy-button">Comprar</ion-button>
+      </div>
+        <div class="movie-card">
+          <img src="https://m.media-amazon.com/images/M/MV5BMzUzNDM2NzM2MV5BMl5BanBnXkFtZTgwNTM3NTg4OTE@._V1_.jpg" 
+            alt="La La Land" 
+            class="movie-img">
+          <h2 class="movie-title">La La Land</h2>
+          <p class="movie-details">Duración: 2h 8m | Horarios: 11:30, 14:20, 18:00</p>
+          <ion-button expand="full" class="buy-button">Comprar</ion-button>
+        </div>
+        <div class="movie-card">
+          <img src="https://s3.amazonaws.com/nightjarprod/content/uploads/sites/302/2024/08/08100009/pB8BM7pdSp6B6Ih7QZ4DrQ3PmJK-scaled.jpg" alt="Fight Club" class="movie-img">
+          <h2 class="movie-title">Fight Club</h2>
+          <p class="movie-details">Duración: 2h 19m | Horarios: 11:30, 16:00, 20:30</p>
+          <ion-button expand="full" class="buy-button">Comprar</ion-button>
+      </div>
+    </div>
+  </div>
 </ion-content>
+
+<style>
+  /* Títulos de las secciones */
+  .section-header {
+    padding: 20px;
+    color: white;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .superhero-bg {
+    background: linear-gradient(135deg, #FF5722, #FFC107);
+  }
+
+  .classic-bg {
+    background: linear-gradient(135deg, #3F51B5, #03A9F4);
+  }
+
+  .drama-bg {
+    background: linear-gradient(135deg, #9C27B0, #E91E63);
+  }
+
+  .section-title {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+
+  /* Contenedor de películas */
+  .movie-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 0 0 10px 10px;
+  }
+
+  /* Tarjetas de películas */
+  .movie-card {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .movie-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+
+  .movie-img {
+    width: 100%;
+    height: auto;
+  }
+
+  .movie-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+
+  .movie-details {
+    font-size: 0.9em;
+    margin-bottom: 10px;
+    color: #666;
+  }
+
+  .buy-button {
+    --background: #4CAF50;
+    --background-hover: #388E3C;
+    color: white;
+    border-radius: 20px;
+    font-weight: bold;
+  }
+</style>
