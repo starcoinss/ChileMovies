@@ -1,0 +1,14 @@
+<ion-content>
+  <div *ngIf="isPaymentDone; else noPayment">
+    <h1>¡Pago realizado con éxito!</h1>
+    <p>Gracias por tu compra.</p>
+    <ion-button (click)="goBack()">Volver al inicio</ion-button>
+  </div>
+
+  <ng-template #noPayment>
+    <h1>No has realizado ningún pago aún.</h1>
+    <p>Por favor, procede a realizar el pago.</p>
+    <ion-button (click)="goBack()">Volver al inicio</ion-button>
+  </ng-template>
+</ion-content>
+

@@ -10,6 +10,9 @@
   <ion-header collapse="condense">
     <ion-toolbar>
       <ion-title size="large">Cartelera</ion-title>
+      <ion-button slot="end" id="cart-button">
+        <ion-icon name="cart-outline"></ion-icon> Carrito (<span id="cart-count">0</span>)
+      </ion-button>
     </ion-toolbar>
   </ion-header>
 
@@ -21,68 +24,52 @@
     <div class="movie-container">
       <!-- Película -->
       <div class="movie-card">
-        <img src="https://m.media-amazon.com/images/S/pv-target-images/97ec724900fd9c3d7006614ac9702f35e21386eacc63981bbad6b14baeed2197.jpg" 
-          alt="Avengers Endgame" 
-          class="movie-img">
-        <h2 class="movie-title">Avengers: Endgame</h2>
+        <img src="https://m.media-amazon.com/images/I/81ai6zx6eXL._AC_SL1304_.jpg" alt="Avengers Endgame" />
+        <h3 class="movie-title">Avengers Endgame</h3>
         <p class="movie-details">Duración: 3h | Horarios: 12:00, 15:30, 19:00</p>
-        <ion-button expand="full" class="buy-button">Comprar</ion-button>
+        <ion-button expand="full" (click)="addToCart({name: 'Avengers Endgame', price: 4000, duration: '3h'})">Agregar al carrito</ion-button>
       </div>
       <div class="movie-card">
-        <img src="https://decine21.com/img/upload/obras/the-batman-42376/the-batman-42376-c.jpg" 
-          alt="The Batman" 
-          class="movie-img">
-        <h2 class="movie-title">The Batman</h2>
+        <img src="https://decine21.com/img/upload/obras/the-batman-42376/the-batman-42376-c.jpg" alt="The Batman" />
+        <h3 class="movie-title">The Batman</h3>
         <p class="movie-details">Duración: 2h 56m | Horarios: 13:00, 16:45, 20:15</p>
-        <ion-button expand="full" class="buy-button">Comprar</ion-button>
+        <ion-button expand="full" (click)="addToCart({name: 'The Batman', price: 4000, duration: '2h 56m'})">Agregar al carrito</ion-button>
       </div>
       <div class="movie-card">
-        <img src="https://m.media-amazon.com/images/S/pv-target-images/869a8420fe4cdd1fc934785827a06ac63d6e1c55f650d13e0a4128e4e35bd4d9.jpg" 
-          alt="Spider-Man: No Way Home" 
-          class="movie-img">
-        <h2 class="movie-title">Spider-Man: No Way Home</h2>
+        <img src="https://m.media-amazon.com/images/S/pv-target-images/869a8420fe4cdd1fc934785827a06ac63d6e1c55f650d13e0a4128e4e35bd4d9.jpg" alt="Spider-Man: No Way Home" />
+        <h3 class="movie-title">Spider-Man: No Way Home</h3>
         <p class="movie-details">Duración: 2h 28m | Horarios: 10:00, 14:30, 18:45</p>
-        <ion-button expand="full" class="buy-button">Comprar</ion-button>
+        <ion-button expand="full" (click)="addToCart({name: 'Spider-Man: No Way Home', price: 4000, duration: '2h 28m'})">Agregar al carrito</ion-button>
       </div>
       <div class="movie-card">
-        <img src="https://pics.filmaffinity.com/Venom_El_aultimo_baile-379990903-large.jpg" 
-          alt="Spider-Man: No Way Home" 
-          class="movie-img">
-        <h2 class="movie-title">Venom 3</h2>
+        <img src="https://pics.filmaffinity.com/Venom_El_aultimo_baile-379990903-large.jpg" alt="Venom 3" />
+        <h3 class="movie-title">Venom 3</h3>
         <p class="movie-details">Duración: 1h 49m | Horarios: 15:20, 18:00</p>
-        <ion-button expand="full" class="buy-button">Comprar</ion-button>
+        <ion-button expand="full" (click)="addToCart({name: 'Venom 3', price: 4000, duration: '1h 49m'})">Agregar al carrito</ion-button>
       </div>
       <div class="movie-card">
-        <img src="https://www.ecartelera.com/carteles/16600/16608/005_m.jpg" 
-          alt="Deadpool 3" 
-          class="movie-img">
-        <h2 class="movie-title">Deadpool 3</h2>
+        <img src="https://www.ecartelera.com/carteles/16600/16608/005_m.jpg" alt="Deadpool 3" />
+        <h3 class="movie-title">Deadpool 3</h3>
         <p class="movie-details">Duración: 2h 7m | Horarios: 10:30, 13:00, 15:30</p>
-        <ion-button expand="full" class="buy-button">Comprar</ion-button>
+        <ion-button expand="full" (click)="addToCart({name: 'Deadpool 3', price: 4000, duration: '2h 7m'})">Agregar al carrito</ion-button>
       </div>
       <div class="movie-card">
-        <img src="https://play-lh.googleusercontent.com/SnNQY10paRqnLAIqMs3kwehEIvhWurhkLoO_m0z_t58Dy1bC9ScA-gxjed_n1hjwBj0V" 
-          alt="Grandes Heroes"
-          class="movie-img">
-        <h2 class="movie-title">Grandes Heroes</h2>
+        <img src="https://play-lh.googleusercontent.com/SnNQY10paRqnLAIqMs3kwehEIvhWurhkLoO_m0z_t58Dy1bC9ScA-gxjed_n1hjwBj0V" alt="Grandes Heroes" />
+        <h3 class="movie-title">Grandes Heroes</h3>
         <p class="movie-details">Duración: 1h 42m | Horarios: 11:00, 13:20, 16:10</p>
-        <ion-button expand="full" class="buy-button">Comprar</ion-button>
+        <ion-button expand="full" (click)="addToCart({name: 'Grandes Heroes', price: 4000, duration: '1h 42m'})">Agregar al carrito</ion-button>
       </div>
       <div class="movie-card">
-        <img src="https://es.web.img3.acsta.net/pictures/18/04/13/11/46/5802807.jpg" 
-          alt="Los Increíbles 2"
-          class="movie-img">
-        <h2 class="movie-title">Los Increíbles 2</h2>
+        <img src="https://es.web.img3.acsta.net/pictures/18/04/13/11/46/5802807.jpg" alt="Los Increíbles 2" />
+        <h3 class="movie-title">Los Increíbles 2</h3>
         <p class="movie-details">Duración: 2h 6m | Horarios: 10:00, 12:20, 14:50</p>
-        <ion-button expand="full" class="buy-button">Comprar</ion-button>
+        <ion-button expand="full" (click)="addToCart({name: 'Los Increíbles 2', price: 4000, duration: '2h 6m'})">Agregar al carrito</ion-button>
       </div>
       <div class="movie-card">
-        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi_ObHPFKcsnhRcblr5BegFKqOwbuk81elfIsH0wPsUaYGpTAcUXuLAZ8jWQI3m3-Qu0F35MriysZZ0qiMlrmRuG24B_O7wpxCD9SDduBXkOefU5ccSOXvKYJNkMma-519lLvMmvASMApnS6VBCiXnpZstX2zHsQlO0zby9PvtGeqrnQ0XJDpj7JnMpT6I/s1008/Flash2023.jpg" 
-          alt="Flash"
-          class="movie-img">
-        <h2 class="movie-title">Flash</h2>
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi_ObHPFKcsnhRcblr5BegFKqOwbuk81elfIsH0wPsUaYGpTAcUXuLAZ8jWQI3m3-Qu0F35MriysZZ0qiMlrmRuG24B_O7wpxCD9SDduBXkOefU5ccSOXvKYJNkMma-519lLvMmvASMApnS6VBCiXnpZstX2zHsQlO0zby9PvtGeqrnQ0XJDpj7JnMpT6I/s1008/Flash2023.jpg" alt="Flash" />
+        <h3 class="movie-title">Flash</h3>
         <p class="movie-details">Duración: 2h 24m | Horarios: 11:20, 13:50, 17:00</p>
-        <ion-button expand="full" class="buy-button">Comprar</ion-button>
+        <ion-button expand="full" (click)="addToCart({name: 'Flash', price: 4000, duration: '2h 24m'})">Agregar al carrito</ion-button>
         
     </div>
   </div>
@@ -96,44 +83,34 @@
     <div class="movie-container">
       <!-- Películas -->
       <div class="movie-card">
-        <img src="https://m.media-amazon.com/images/I/71QQ6dE72sL._AC_UF894,1000_QL80_.jpg" 
-          alt="Interstellar" 
-          class="movie-img">
-        <h2 class="movie-title">Interstellar</h2>
+        <img src="https://m.media-amazon.com/images/S/pv-target-images/79194981293eabf6620ece96eb5a9c1fffa04d3374ae12986e0748800b37b9cf.jpg" alt="Interestelar" />
+        <h3 class="movie-title">Interestelar</h3>
         <p class="movie-details">Duración: 2h 49m | Horarios: 10:00, 14:30, 19:30</p>
-        <ion-button expand="full" class="buy-button">Comprar</ion-button>
+        <ion-button expand="full" (click)="addToCart({name: 'Interestelar', price: 4000, duration: '2h 49m'})">Agregar al carrito</ion-button>
       </div>
       <div class="movie-card">
-        <img src="https://m.media-amazon.com/images/M/MV5BNDYwNzVjMTItZmU5YS00YjQ5LTljYjgtMjY2NDVmYWMyNWFmXkEyXkFqcGc@._V1_.jpg" 
-          alt="Forrest Gump" 
-          class="movie-img">
-        <h2 class="movie-title">Forrest Gump</h2>
+        <img src="https://m.media-amazon.com/images/M/MV5BNDYwNzVjMTItZmU5YS00YjQ5LTljYjgtMjY2NDVmYWMyNWFmXkEyXkFqcGc@._V1_.jpg" alt="Forrest Gump" />
+        <h3 class="movie-title">Forrest Gump</h3>
         <p class="movie-details">Duración: 2h 22m | Horarios: 12:00, 16:00, 20:00</p>
-        <ion-button expand="full" class="buy-button">Comprar</ion-button>
+        <ion-button expand="full" (click)="addToCart({name: 'Forrest Gump', price: 4000, duration: '2h 22m'})">Agregar al carrito</ion-button>
       </div>
       <div class="movie-card">
-        <img src="https://play-lh.googleusercontent.com/rMsVcXqDC9zNT3x3b03wxjCN5xfUq2Tu_G3njfLiyAdmzEVXTHJoP2dY_GouFhZX3pcHvltaE5Mtt5ljKQ" 
-          alt="Meteoro" 
-          class="movie-img">
-        <h2 class="movie-title">Meteoro</h2>
+        <img src="https://play-lh.googleusercontent.com/rMsVcXqDC9zNT3x3b03wxjCN5xfUq2Tu_G3njfLiyAdmzEVXTHJoP2dY_GouFhZX3pcHvltaE5Mtt5ljKQ" alt="Meteoro" />
+        <h3 class="movie-title">Meteoro</h3>
         <p class="movie-details">Duración: 2h 15m | Horarios: 13:00, 15:30, 18:00</p>
-        <ion-button expand="full" class="buy-button">Comprar</ion-button>
+        <ion-button expand="full" (click)="addToCart({name: 'Meteoro', price: 4000, duration: '2h 15m'})">Agregar al carrito</ion-button>
       </div>
       <div class="movie-card">
-        <img src="https://es.web.img3.acsta.net/pictures/18/06/12/12/12/0117051.jpg?coixp=49&coiyp=27" 
-          alt="El Padrino" 
-          class="movie-img">
-        <h2 class="movie-title">El Padrino</h2>
+        <img src="https://es.web.img3.acsta.net/pictures/18/06/12/12/12/0117051.jpg?coixp=49&coiyp=27" alt="El Padrino" />
+        <h3 class="movie-title">El Padrino</h3>
         <p class="movie-details">Duración: 2h 55m | Horarios: 13:00, 16:10, 19:30</p>
-        <ion-button expand="full" class="buy-button">Comprar</ion-button>
+        <ion-button expand="full" (click)="addToCart({name: 'El Padrino', price: 4000, duration: '2h 55m'})">Agregar al carrito</ion-button>
       </div>
       <div class="movie-card">
-        <img src="https://pics.filmaffinity.com/Gladiator-368149580-large.jpg" 
-          alt="Gladiador" 
-          class="movie-img">
-        <h2 class="movie-title">Gladiador 1</h2>
+        <img src="https://pics.filmaffinity.com/Gladiator-368149580-large.jpg" alt="Gladiador 1" />
+        <h3 class="movie-title">Gladiador 1</h3>
         <p class="movie-details">Duración: 2h 35m | Horarios: 14:00, 16:50, 19:30</p>
-        <ion-button expand="full" class="buy-button">Comprar</ion-button>
+        <ion-button expand="full" (click)="addToCart({name: 'Gladiador 1', price: 4000, duration: '2h 35m'})">Agregar al carrito</ion-button>
       </div>
     </div>
   </div>
@@ -144,63 +121,76 @@
       <h2 class="section-title"><ion-icon name="sad-outline"></ion-icon> Drama</h2>
     </div>
     <div class="movie-container">
-      <!-- Película -->
+      <!-- Películas -->
       <div class="movie-card">
-        <img src="https://pics.filmaffinity.com/Joker_Folie_aa_Deux-920647444-large.jpg" 
-          alt="Joker" 
-          class="movie-img">
-        <h2 class="movie-title">Joker</h2>
+        <img src="https://irs.www.warnerbroslatino.com/keyart-jpeg/movies/media/browser/joker_v_dd_ka_tt_2000x3000_300dpi_mx_98d2fbda.jpeg" alt="Joker" />
+        <h3 class="movie-title">Joker</h3>
         <p class="movie-details">Duración: 2h 2m | Horarios: 14:00, 17:30, 21:00</p>
-        <ion-button expand="full" class="buy-button">Comprar</ion-button>
+        <ion-button expand="full" (click)="addToCart({name: 'Joker', price: 4000, duration: '2h 2m'})">Agregar al carrito</ion-button>
       </div>
       <div class="movie-card">
-        <img src="https://pics.filmaffinity.com/Romper_el_cairculo-815379231-large.jpg" 
-          alt="Romper el círculo" 
-          class="movie-img">
-        <h2 class="movie-title">Romper el círculo</h2>
+        <img src="https://andesfilms.cl/wp-content/thumbgen_cache/9bc40e364a7d4307bcf52bd3dc3d9c7b.jpg" alt="Romper el círculo" />
+        <h3 class="movie-title">Romper el círculo</h3>
         <p class="movie-details">Duración: 2h 11m | Horarios: 11:30, 16:00, 20:30</p>
-        <ion-button expand="full" class="buy-button">Comprar</ion-button>
+        <ion-button expand="full" (click)="addToCart({name: 'Romper el círculo', price: 4000, duration: '2h 11m'})">Agregar al carrito</ion-button>
       </div>
       <div class="movie-card">
-        <img src="https://pics.filmaffinity.com/Titanic-321994924-large.jpg" 
-          alt="Titanic" 
-          class="movie-img">
-        <h2 class="movie-title">Titanic</h2>
+        <img src="https://pics.filmaffinity.com/Titanic-321994924-large.jpg" alt="Titanic" />
+        <h3 class="movie-title">Titanic</h3>
         <p class="movie-details">Duración: 3h 15m | Horarios: 13:00, 17:45, 21:30</p>
-        <ion-button expand="full" class="buy-button">Comprar</ion-button>
+        <ion-button expand="full" (click)="addToCart({name: 'Titanic', price: 4000, duration: '3h 15m'})">Agregar al carrito</ion-button>
       </div>
       <div class="movie-card">
-        <img src="https://pics.filmaffinity.com/El_pianista-978132965-large.jpg" 
-          alt="El pianista" 
-          class="movie-img">
-        <h2 class="movie-title">El pianista</h2>
+        <img src="https://pics.filmaffinity.com/El_pianista-978132965-large.jpg" alt="El Pianista" />
+        <h3 class="movie-title">El Pianista</h3>
         <p class="movie-details">Duración: 2h 30m | Horarios: 10:00, 14:30, 19:30</p>
-        <ion-button expand="full" class="buy-button">Comprar</ion-button>
+        <ion-button expand="full" (click)="addToCart({name: 'El Pianista', price: 4000, duration: '2h 30m'})">Agregar al carrito</ion-button>
       </div>
       <div class="movie-card">
-        <img src="https://es.web.img2.acsta.net/pictures/17/11/15/13/00/0563207.jpg" 
-          alt="El Gran Showman" 
-          class="movie-img">
-        <h2 class="movie-title">El Gran Showman</h2>
+        <img src="https://es.web.img2.acsta.net/pictures/17/11/15/13/00/0563207.jpg" alt="El Gran Showman" />
+        <h3 class="movie-title">El Gran Showman</h3>
         <p class="movie-details">Duración: 1h 45m | Horarios: 12:00, 15:10, 19:10</p>
-        <ion-button expand="full" class="buy-button">Comprar</ion-button>
+        <ion-button expand="full" (click)="addToCart({name: 'El Gran Showman', price: 4000, duration: '1h 45m'})">Agregar al carrito</ion-button>
       </div>
-        <div class="movie-card">
-          <img src="https://m.media-amazon.com/images/M/MV5BMzUzNDM2NzM2MV5BMl5BanBnXkFtZTgwNTM3NTg4OTE@._V1_.jpg" 
-            alt="La La Land" 
-            class="movie-img">
-          <h2 class="movie-title">La La Land</h2>
+      <div class="movie-card">
+        <img src="https://m.media-amazon.com/images/M/MV5BMzUzNDM2NzM2MV5BMl5BanBnXkFtZTgwNTM3NTg4OTE@._V1_.jpg" alt="La La Land" />
+        <h3 class="movie-title">La La Land</h3>
           <p class="movie-details">Duración: 2h 8m | Horarios: 11:30, 14:20, 18:00</p>
-          <ion-button expand="full" class="buy-button">Comprar</ion-button>
+          <ion-button expand="full" (click)="addToCart({name: 'La La Land', price: 4000, duration: '2h 8m'})">Agregar al carrito</ion-button>
         </div>
         <div class="movie-card">
-          <img src="https://s3.amazonaws.com/nightjarprod/content/uploads/sites/302/2024/08/08100009/pB8BM7pdSp6B6Ih7QZ4DrQ3PmJK-scaled.jpg" alt="Fight Club" class="movie-img">
-          <h2 class="movie-title">Fight Club</h2>
+          <img src="https://s3.amazonaws.com/nightjarprod/content/uploads/sites/302/2024/08/08100009/pB8BM7pdSp6B6Ih7QZ4DrQ3PmJK-scaled.jpg" alt="Fight Club" />
+          <h3 class="movie-title">Fight Club</h3>
           <p class="movie-details">Duración: 2h 19m | Horarios: 11:30, 16:00, 20:30</p>
-          <ion-button expand="full" class="buy-button">Comprar</ion-button>
+          <ion-button expand="full" (click)="addToCart({name: 'Fight Club', price: 4000, duration: '2h 19m'})">Agregar al carrito</ion-button>
       </div>
     </div>
   </div>
+<div class="cart-info">
+  <p class="cart-summary"></p>
+    <p>Total: $<span>{{ cartTotal }}</span>
+  </p>
+
+  <!-- Listar los artículos del carrito -->
+  <div *ngIf="cart.length > 0" class="cart-items">
+    <h3 class="cart-title">Carrito de compras</h3>
+    <ul>
+      <li *ngFor="let item of cart" class="cart-item">
+        <div class="item-details">
+          <p class="item-name">{{ item.name }}</p>
+          <p class="item-price">${{ item.price }}</p>
+        </div>
+        <ion-button fill="clear" class="remove-btn" (click)="removeFromCart(item)">Eliminar</ion-button>
+      </li>
+    </ul>
+    <div class="cart-actions">
+      <ion-button expand="full" class="checkout-btn" (click)="processPayment()">Proceder a Pago</ion-button>
+    </div>
+  </div>
+  <div *ngIf="cart.length === 0" class="empty-cart">
+    <p>Tu carrito está vacío.</p>
+  </div>
+</div>
 </ion-content>
 
 <style>

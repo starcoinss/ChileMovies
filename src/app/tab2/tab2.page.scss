@@ -1,16 +1,164 @@
-
-
-
-
-
-ion-content {
-    --background: #f8f8f8; /* barra arriba */
+/* Estilos para el carrito de compras */
+.cart-info {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 500px;
+  margin: auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
+
+.cart-summary {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.cart-items {
+  margin-top: 20px;
+}
+
+.cart-title {
+  font-size: 1.5em;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.item-details {
+  flex: 1;
+}
+
+.item-name {
+  font-size: 1.1em;
+  color: #333;
+}
+
+.item-price {
+  font-size: 1.1em;
+  font-weight: 600;
+  color: #007bff;
+}
+
+.remove-btn {
+  font-size: 1.1em;
+  color: #e74c3c;
+  transition: all 0.3s ease;
+}
+
+.remove-btn:hover {
+  color: #c0392b;
+}
+
+.cart-actions {
+  margin-top: 20px;
+}
+
+.checkout-btn {
+  background-color: #28a745;
+  color: #fff;
+  font-size: 1.2em;
+}
+
+.checkout-btn:hover {
+  background-color: #218838;
+}
+
+.empty-cart {
+  text-align: center;
+  color: #aaa;
+  font-size: 1.2em;
+}
+
+/* Estilos para las películas */
+.section-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 20px 0 10px 20px;
+  color: #444;
+}
+
+.movie-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.custom-button-blue {
+  background-color: #007bff; /* Azul */
+  color: white;
+}
+
+/* Tarjetas de películas */
+.movie-card {
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.movie-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Imagen de las películas */
+.movie-img {
+  width: 100%;
+  height: auto;
+  border-bottom: 2px solid #ddd;
+}
+
+/* Título de las películas */
+.movie-title {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #333;
+  margin: 10px 0;
+}
+
+/* Detalles de las películas */
+.movie-details {
+  font-size: 0.9em;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+/* Botón de comprar */
+.buy-button {
+  margin-top: 10px;
+  --background: #4CAF50; /* Verde */
+  --background-hover: #45a049;
+  --color: white;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+/* Estilos globales para Ion */
+ion-content {
+  --background: #f8f8f8; /* barra arriba */
+}
+
 ion-toolbar {
-    --background: #f70101; /* el color de fondo del toolbar */
+  --background: #f70101; /* el color de fondo del toolbar */
 }
 
 ion-title {
-    color: #ffffff; /* Cambia el color del texto del título */
-    font-weight: bold; /* peso de fuente para hacer el texto más grueso */
+  color: #ffffff; /* Cambia el color del texto del título */
+  font-weight: bold; /* peso de fuente para hacer el texto más grueso */
 }

@@ -1,0 +1,49 @@
+<ion-content>
+  <div class="form-container">
+    <!-- Mostrar mensajes de éxito -->
+    <div *ngIf="successMessage" class="success-message">
+      <ion-icon name="checkmark-circle-outline"></ion-icon>
+      <h2>{{ successMessage }}</h2>
+    </div>
+
+    <!-- Mostrar mensajes de error -->
+    <div *ngIf="errorMessage" class="error-message">
+      <ion-icon name="alert-circle-outline"></ion-icon>
+      <h2>{{ errorMessage }}</h2>
+    </div>
+
+    <!-- Formulario de inicio de sesión -->
+    <div *ngIf="isLoginMode" class="form-box">
+      <ion-title>Iniciar sesión</ion-title>
+      <ion-item>
+        <ion-icon name="mail-outline" slot="start"></ion-icon>
+        <ion-input [(ngModel)]="email" type="email" placeholder="Correo electrónico"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-icon name="lock-closed-outline" slot="start"></ion-icon>
+        <ion-input [(ngModel)]="password" type="password" placeholder="Contraseña"></ion-input>
+      </ion-item>
+      <ion-button expand="block" (click)="login()">Iniciar sesión</ion-button>
+      <ion-button fill="clear" (click)="switchMode()">¿No tienes cuenta? <b>Regístrate aquí</b></ion-button>
+    </div>
+
+    <!-- Formulario de registro -->
+    <div *ngIf="!isLoginMode" class="form-box">
+      <ion-title>Crear cuenta</ion-title>
+      <ion-item>
+        <ion-icon name="mail-outline" slot="start"></ion-icon>
+        <ion-input [(ngModel)]="registerEmail" type="email" placeholder="Correo electrónico"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-icon name="lock-closed-outline" slot="start"></ion-icon>
+        <ion-input [(ngModel)]="registerPassword" type="password" placeholder="Contraseña"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-icon name="lock-closed-outline" slot="start"></ion-icon>
+        <ion-input [(ngModel)]="confirmPassword" type="password" placeholder="Confirmar contraseña"></ion-input>
+      </ion-item>
+      <ion-button expand="block" (click)="register()">Registrar</ion-button>
+      <ion-button fill="clear" (click)="switchMode()">¿Ya tienes cuenta? <b>Inicia sesión aquí</b></ion-button>
+    </div>
+  </div>
+</ion-content>
